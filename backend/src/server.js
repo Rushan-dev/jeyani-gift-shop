@@ -32,7 +32,7 @@ const app = express();
 // Middleware
 const allowedOrigins = process.env.FRONTEND_URL 
   ? process.env.FRONTEND_URL.split(',').map(url => url.trim())
-  : ['http://localhost:5173'];
+  : ['https://jeyani-gift-shop.vercel.app/'];
 
 app.use(cors({
   origin: (origin, callback) => {
